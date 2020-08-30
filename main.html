@@ -24,12 +24,16 @@
         <img class="product_name_img" src="" alt="product_image">
     </section>
     <section class="about_product container">
+        <video loop="" muted="" autoplay="" poster="" class="video_back">
+            <source src="video/Clouds_Fly_By.mp4" type="video/mp4">
+        </video>
         <div class="about_product_text_block">
             <h2 class="about_product_title text">
                 About your product
             </h2>
             <p class="about_product_content_text about_product_text_block1 text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates doloremque, numquam soluta mollitia
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates doloremque, numquam soluta
+                mollitia
                 natus adipisci cupiditate molestias laboriosam illum sunt ipsa error et rerum totam, vitae sapiente
                 aliquid neque temporibus.
             </p>
@@ -39,7 +43,9 @@
                 rerum sunt ducimus quibusdam obcaecati.
             </p>
         </div>
-        <img class="about_product_img" src="" alt="about_product_image">
+        <video loop="" muted="" controls="" poster="" class="about_product_img">
+            <source src="video/coverr--06-20-blond-hiker-girl-in-misty-mountain-07-8995.mp4" type="video/mp4">
+        </video>
     </section>
     <section class="pluses_product container">
         <h2 class="pluses_product_title text">
@@ -159,7 +165,7 @@
                 <li>Cum odio, iste quia doloribus autem;</li>
                 <li>Aperiam nulla ea neque;</li>
             </ul>
-            <button class="buy_it_now_type_button">Buy</button>
+            <a href="" class="buy_it_now_type_button">Buy</a>
         </section>
         <section class="buy_it_now_type">
             <h2 class="buy_it_now_type_title">Premium</h2>
@@ -174,7 +180,7 @@
                 <li>Тemo facere rem vitae odit;</li>
                 <li>Cum odio, iste quia doloribus autem;</li>
             </ul>
-            <button class="buy_it_now_type_button">Buy</button>
+            <a href="" class="buy_it_now_type_button">Buy</a>
         </section>
         <section class="buy_it_now_type">
             <h2 class="buy_it_now_type_title">Lux</h2>
@@ -193,33 +199,37 @@
                 <li>Aperiam nulla ea neque;</li>
                 <li>Porro officia cumque sint deleniti;</li>
             </ul>
-            <button class="buy_it_now_type_button">Buy</button>
+            <a href="" class="buy_it_now_type_button">Buy</a>
         </section>
     </section>
     <footer class="contacts container">
         <h2 class="contacts_title text">Contacts</h2>
         <div class="contacts_form_and_link">
             <form class="contacts_form text" action="#">
-                <input type="text" placeholder="Your name:">
-                <input type="email" placeholder="Your mail:">
-                <textarea class="text" name="" id="" cols="30" rows="8" placeholder="Your message"></textarea>
+                <input class="contacts_form_item" type="text" placeholder="Your name:">
+                <input class="contacts_form_item" type="email" placeholder="Your mail:">
+                <textarea class="contacts_form_item" class="text" name="" id="" cols="30" rows="8"
+                    placeholder="Your message"></textarea>
                 <input type="submit" value="SEND">
             </form>
             <div class="contacts_link">
-                <div class="contacts_link_skype">
+                <div class="contacts_link_skype contacts_link_item">
                     <img src="img/skype_icon.png" alt="skype_icon">
-                    <a href="#"></a>
+                    <a class="contacts_link_value" href="skype:sinhrofazotron">here_your_login_skype</a>
                 </div>
-                <div class="contacts_link_isq">
+                <div class="contacts_link_isq contacts_link_item">
                     <img src="img/icq_icon.png" alt="icq_icon">
+                    <a href="#" class="contacts_link_value">279679659</a>
                 </div>
-                <div class="contacts_link_mail">
+                <div class="contacts_link_mail contacts_link_item">
                     <img src="img/email_icon.png" alt="email_icon">
+                    <a href="mailto:psdhtmlcss@mail.ru" class="contacts_link_value">psdhtmlcss@mail.ru</a>
                 </div>
-                <div class="contacts_link_phone">
+                <div class="contacts_link_phone contacts_link_item">
                     <img src="img/phone_icon.png" alt="phone_icon">
+                    <a href="tel:800045685555" class="contacts_link_value">80 00 4568 55 55</a>
                 </div>
-                <img src="img/social_buttons.png" alt="social_buttons">
+                <img class="social_img" src="img/social_buttons.png" alt="social_buttons">
             </div>
         </div>
     </footer>
