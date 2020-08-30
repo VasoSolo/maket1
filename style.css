@@ -1,6 +1,13 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    position: relative;
 }
 .text {
    font-family: Arial;
@@ -8,7 +15,8 @@
 /*//1 секция/////////////*/
 .product_name {
     display: flex;
-    background-image: url(img/header-bg.png);
+    background-color: #445161;
+    z-index: 1;
 }
     .product_name_img {
         width: 469px;
@@ -45,32 +53,312 @@
 /*//2 секция/////////////*/
 .about_product {
     display: flex;
+    background-color: #ffffff;
+    z-index: 1;
 }
     .about_product_text_block {
+        z-index: 2;
         margin-left: 50px;
         margin-top: 50px;
+        overflow: hidden;
+        margin-bottom: 50px;
+        margin-right: 30px;
     }
+        .video_back {
+            position: absolute;
+            width: 1200px;
+            z-index: 1;
+
+        }
         .about_product_title {
-            color: #445161;
+            color: #333333;
             font-family: Arial;
             font-size: 30px;
             font-weight: 400;
             line-height: 36px;
         }
         .about_product_content_text {
-            color: #333333;
+            color: black;
             font-size: 16px;
-            font-weight: 400;
+            font-weight: 400    ;
             line-height: 24px;
             width: 650px;
         }
         .about_product_text_block1 {
             padding-bottom: 20px;
-            padding-top: 32px;
+            padding-top: 30px;
         }
     .about_product_img {
+        z-index: 2;
         width: 430px;
         height: 245px;
-        background-color: #445161;
-        margin: 50px 50px 50px 90px;
+        margin: 50px 50px 50px 0px;
     }
+/*//3 секция/////////////*/
+.pluses_product {
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 10;
+}
+    .pluses_product_title {
+        text-align: center;
+        flex-basis: 100%;
+        color: #445161;
+        font-family: Arial;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 36px;
+        margin-top: 30px;
+    }
+    .pluses_product_list {
+        list-style: none ;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+        .pluses_product_item {
+            display: flex;
+            flex-basis: 50%;
+            padding-top: 30px;
+        }
+        .pluses_product_item::before{
+            content: url(img/2-layers.png);
+            padding-right: 10px;
+        }
+/*//4 секция/////////////*/ 
+.screenshots {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    padding-bottom: 50px;
+}
+    .screenshots_title {
+        flex-basis: 100%;
+        text-align: center;
+        color: #445161;
+        font-family: Arial;
+        font-size: 30px;
+        font-weight: 400;
+        margin-top: 30px;
+    }
+    .screenshots_item {
+        flex-basis: 50%;
+        display: flex;
+        padding: 30px 30px 0 50px ;
+        justify-content: space-around;
+    }
+        .screenshots_figcaption {
+            padding-left: 15px;
+        }
+            .screenshots_figcaption_title {
+                color: lightslategray;
+                font-family: Arial;
+                font-size: 20px;
+                font-weight: 400;
+                padding-bottom: 10px;
+            }
+            .screenshots_figcaption_text {
+                font-family: Arial;
+                font-size: 20px;
+                font-weight: 400;
+                padding-bottom: 10px;
+            }
+
+/*//5 секция/////////////*/ 
+.reviews_title {
+    text-align: center;
+    flex-basis: 100%;
+    color: #445161;
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 30px;
+}
+.reviews_bot {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+    .reviews_item {
+        flex-basis: 50%;
+        display: flex;
+        padding-top: 30px;
+        padding-left: 50px;
+        padding-right: 30px;
+    }
+        .reviews_img {
+            padding-right: 15px;
+            align-self: center;
+        }
+        .reviews_text_autor {
+           background-color: darkgray;
+           position: relative;
+           margin-left: 20px;
+           border-radius: 5px;
+           align-self: center;
+        }
+        .reviews_text_autor::before {
+            content: '';
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            border: 17px solid transparent;
+            border-right: 17px solid darkgray;
+            top: 15px;
+            left: -31px;
+        }
+        .reviews_text {
+            padding: 5px 0 0 15px;
+        }
+        .reviews_autor {
+            padding: 15px 0 0 15px;
+        }
+/*//6 секция/////////////*/ 
+.buy_it_now {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+    align-items: flex-end;
+}
+    .buy_it_now_title {
+        flex-basis: 100%;
+        text-align: center;
+        color: #445161;
+        font-family: Arial;
+        font-size: 30px;
+        font-weight: 400;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .buy_it_now_type {
+        background-color: #445161;
+        width: 300px;
+        border-radius: 5px;
+        height: max-content;
+        border: 2px solid #445161;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+        .buy_it_now_type_title {
+            text-align: center;
+            color: #fff;
+            font-family: Arial;
+            margin-bottom: 10px;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 36px;
+        }
+        .buy_it_now_price {
+            background-color: #fff;
+            text-align: center;
+            font-family: Arial;
+            padding: 10px 0;
+
+            color: #445162;
+            
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 30px;
+        }
+        .buy_it_now_type_list {
+            list-style: decimal;
+            list-style-position: inside;
+            color: #fff;
+            font-family: Arial;
+            padding: 15px 10px;
+
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+        .buy_it_now_type_button {
+            border-radius: 3px;
+            margin: 0 auto;
+            border: none;
+            color: #445161;
+            font-weight: bold;
+
+            width: 260px;
+            height: 40px;
+            background-color: #ffffff;
+
+            font-size: 18px;
+            line-height: 18px;
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            padding-top: 0.7em;
+        }
+/*//7 секция/////////////*/
+ .contacts {
+    background-color: #445161;
+    padding: 30px 0;
+ }
+    .contacts_title {
+        color: #ffffff;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 36px;
+    }
+    .contacts_form_and_link {
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 15px;
+        display: flex;
+    }
+        .contacts_form {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+        }
+            input[type="text"],
+            input[type="email"] {
+                border-radius: 5px;
+                border: none;
+                height: 40px;
+            }
+            textarea {
+                border-radius: 5px;
+                border: none;
+                height: 170px;
+            }
+            input[type="submit"] {
+                box-sizing: initial;
+                margin: 0 auto;
+                border-radius: 5px;
+                border: none;
+                background-color: #fff;
+                font-weight: 600;
+                width: 140px;
+                height: 40px;
+                color: #445162;
+                font-size: 16px;
+                line-height: 24px;
+                text-transform: uppercase;
+            }
+            .contacts_form_item {
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+        .contacts_link {
+            padding-left: 45px;
+        }
+            .contacts_link_item {
+                margin-bottom: 20px;
+                display: flex;
+            }
+            .contacts_link_value {
+                text-decoration: none;
+                color: #ffffff;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                padding-left: 10px;
+            }
