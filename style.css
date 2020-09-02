@@ -308,7 +308,7 @@
         line-height: 36px;
     }
     .contacts_form_and_link {
-        width: 60%;
+        width: 70%;
         margin: 0 auto;
         margin-top: 15px;
         display: flex;
@@ -316,7 +316,7 @@
         .contacts_form {
             display: flex;
             flex-direction: column;
-            width: 70%;
+            width: 65%;
         }
             input[type="text"],
             input[type="email"] {
@@ -346,13 +346,14 @@
             .contacts_form_item {
                 margin-bottom: 20px;
                 padding: 10px;
+                display: flex;
             }
         .contacts_link {
-            padding-left: 45px;
+            padding-left: 25px;
+            
         }
             .contacts_link_item {
                 margin-bottom: 20px;
-                display: flex;
             }
             .contacts_link_value {
                 text-decoration: none;
@@ -361,4 +362,16 @@
                 font-weight: 400;
                 line-height: 24px;
                 padding-left: 10px;
+                
+            }
+            .soc_icon_link {
+                display: flex;
+            }
+            .fab {
+               font-size: 25px;
+               color: white;
+               padding: 5px;
+            }
+            i:hover {
+                color: cornflowerblue;
             }
